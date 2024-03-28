@@ -28,6 +28,10 @@ def download_file(filepath):
     dir,filename = os.path.split(decode(filepath))
     return send_from_directory(dir, filename, as_attachment=False)
 
+@app.route('/cdn/<word:word>')
+def getWordData(word):
+    word_data = "ik,i,storasdfaf,183b82ec6cf0c5d603fd19bdf31c9e062aad7b87.png" 
+    return send_from_directory(word_data, as_attachment=False)
 
 if __name__=="__main__":
     parser = argparse.ArgumentParser('Usage: %prog [options]')

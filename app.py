@@ -39,4 +39,3 @@ if __name__=="__main__":
     args = parser.parse_args()
     #app.config['ROOT_DIR'] = args.root_dir
     app.run(host=args.host, port=args.port, debug=True)
-    
